@@ -36,7 +36,7 @@ export default function App() {
           padding: 75,
         }}
       >
-        <h1>Generated Color: {color}</h1>
+        Generated Color: {color}
       </div>
       <div
         style={{
