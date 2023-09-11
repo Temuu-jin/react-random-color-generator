@@ -33,7 +33,7 @@ export default function App() {
           textAlign: 'center',
         }}
       >
-        <h1>ColorHex: {color}</h1>
+        <h1>Generated Color: {color}</h1>
       </div>
       <div
         style={{
