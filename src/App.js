@@ -31,6 +31,9 @@ export default function App() {
         style={{
           backgroundColor: color,
           textAlign: 'center',
+          marginLeft: 500,
+          marginRight: 500,
+          padding: 75,
         }}
       >
         <h1>Generated Color: {color}</h1>
