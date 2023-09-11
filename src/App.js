@@ -53,7 +53,7 @@ export default function App() {
             setColor(newHex);
           }}
         >
-          Generate New ColorHex
+          Generate
         </button>
       </div>
     </div>
