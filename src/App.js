@@ -2,7 +2,7 @@ import randomColor from 'randomcolor';
 import { useState } from 'react';
 
 export default function App() {
-  let [colorHex, setColor] = useState('#00ccf0');
+  const [color, setColor] = useState('#00ccf0');
 
   return (
     <div
@@ -29,11 +29,11 @@ export default function App() {
       <br />
       <div
         style={{
-          backgroundColor: colorHex,
+          backgroundColor: color,
           textAlign: 'center',
         }}
       >
-        <h1>ColorHex: {colorHex}</h1>
+        <h1>ColorHex: {color}</h1>
       </div>
       <div
         style={{
