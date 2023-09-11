@@ -1,23 +1,58 @@
-import './App.css';
-import logo from './logo.svg';
+import randomColor from 'randomcolor';
+import { useState } from 'react';
 
 export default function App() {
+  let [colorHex, setColor] = useState('#00ccf0');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div
+      style={{
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100vh',
+        margin: 0,
+      }}
+    >
+      <div
+        style={{
+          padding: 100,
+        }}
+      >
+        <h1
+          style={{
+            textAlign: 'center',
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Random Color Generator
+        </h1>
+      </div>
+      <br />
+      <div
+        style={{
+          backgroundColor: colorHex,
+          textAlign: 'center',
+        }}
+      >
+        <h1>ColorHex: {colorHex}</h1>
+      </div>
+      <div
+        style={{
+          textAlign: 'center',
+        }}
+      >
+        <button
+          style={{
+            padding: 10,
+            fontSize: 18,
+          }}
+          onClick={() => {
+            const newHex = randomColor();
+            setColor(newHex);
+          }}
+        >
+          Generate New ColorHex
+        </button>
+      </div>
     </div>
   );
 }
